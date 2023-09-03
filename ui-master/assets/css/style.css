@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:300,400|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+
+/*Colour Scheme :
+Green #294D4A
+Blue #32627
+Grey #EEEEEE
+Purple  #776472
+*/
+
+/*General Section*/
+
+body {
+  background-color: #EEEEEE;
+}
+
+.bg-light {
+  background-color: #FFFFFF;
+}
+
+.Main-Landing {
+  position: relative;
+}
+/*Navbar*/
+#logo {
+  letter-spacing: 2px;
+  line-height: 0.7;
+  font-family: "Amatic SC";
+  font-size: 250%;
+  color: #294D4A;
+  text-align: left;
+}
+
+#logo:hover {
+  color: #776472;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url('../images/menu.svg');
+}
+
+.nav-item {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  ;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #776472;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  color: #776472;
+
+}
+
+.active {
+  text-decoration: underline;
+  color: #776472;
+}
+/*Page Divider*/
+.divider {
+  max-width: 5rem;
+  border-width: .2rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-top: 1px solid #294D4A;
+}
+/*Landing image & text*/
+.landing {
+  position: absolute;
+  font-family: "Open Sans";
+  color: #FFFFFF;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
+}
+/*Animation on Landing text*/
+.scale-in-hor-left {
+  font-weight: 600;
+  font-size: 6rem;
+  letter-spacing: 0.75rem;
+  -webkit-animation: scale-in-hor-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+  animation: scale-in-hor-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+/*Short about section*/
+#about {
+  padding: 200px 40px;
+  text-align: center;
+}
+
+.name {
+  position: relative;
+  color: #326273;
+  font-family: "Poppins";
+  font-size: 2.5em;
+  text-align: center;
+  padding-bottom: 30px;
+  letter-spacing: 0.05rem;
+  text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.3);
+}
+
+.short-about {
+  font-size: 1.3rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-family: "Source Sans Pro";
+}
+
+.btn {
+  font-family: "Poppins";
+  color: #326273;
+  font-size: 1.2rem;
+}
+
+.btn :hover {
+  color: #776472;
+  text-decoration: underline;
+  transition: .9s ease-in-out;
+}
+/*services offered by TDT*/
+#services div {
+  width: 33.33%;
+  height: 300px;
+  float: left;
+  padding-top: 3em;
+  padding-right: 2em;
+  text-align: center;
+  background-color: #294D4A;
+
+}
+
+#services {
+  padding-bottom: 20em;
+  opacity: 80%;
+
+}
+
+.service-icon {
+  font-size: 3em;
+  padding-bottom: 2.89rem;
+  text-align: center;
+  width: 100%;
+  color: #EEEEEE;
+
+}
+
+.service {
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.servicehead {
+  font-size: 2rem;
+  font-family: "Source Sans Pro";
+}
+
+.subtxt {
+  font-family: "Source Sans Pro";
+  font-size: 1rem;
+  padding-left: 0.975rem;
+}
+
+.white {
+  color: #EEEEEE;
+}
+
+.green {
+  color: #326273;
+}
+
+.length {
+  font-family: "Source Sans Pro";
+  font-size: 1.3rem;
+}
+
+.service-divider {
+  visibility: hidden;
+  display: none;
+}
+/*All main headings in the site*/
+.title {
+  text-align: center;
+  font-family: "Poppins";
+  padding-top: 1em;
+  padding-bottom: 100px;
+  text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.3);
+}
+
+/*About page about me section*/
+.about-me {
+  font-family: "Source Sans Pro";
+  font-size: 1.1rem;
+  text-align: center;
+  color: #294D4A;
+  line-height: 1.6rem;
+  margin-top: 1.6em;
+}
+
+.abouttitle {
+  padding: 4rem;
+}
+
+.sideimg {
+  box-shadow: 10px 10px 5px grey;
+  opacity: 95%;
+}
+
+.col-sm-6 {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+/*Services section*/
+.tabs {
+  padding-top: 10rem;
+}
+
+.flag {
+  position: absolute;
+  background-color: #294D4A;
+  color: azure;
+  opacity: 80%;
+  top: 50%;
+  font-size: 1.5em;
+  font-family: "Open Sans";
+  padding-left: 0.34em;
+  padding-right: 0.34em;
+  padding-bottom: 0.2em;
+}
+
+.img-thumbnail {
+  padding: 0em;
+  opacity: 70%;
+}
+
+.col-lg-4 {
+  margin-top: 2em;
+}
+
+.dog-icon {
+  height: 10rem;
+  width: 10rem;
+  margin-top: 3rem;
+  margin-left: 6rem;
+}
+
+.col-sm-8 {
+  margin-top: 3rem;
+}
+
+.end {
+  padding-bottom: 200px;
+}
+/*Footer */
+.site-footer {
+  text-align: center;
+}
+
+.Socials {
+  display: inline-block;
+  color: #294D4A;
+  text-align: center;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  font-size: 2em;
+  padding: 20px 20px 10px 15px;
+
+}
+
+.Socials :hover {
+  color: #776472;
+}
+
+.policy {
+  float: right;
+  color: #294D4A;
+  padding-top: 30px;
+  padding-right: 2rem;
+}
+
+.policy :hover {
+  color: #776472;
+}
+/*Contact Page*/
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.subhead {
+  font-family: "Source Sans Pro";
+  text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+}
+
+.contact {
+  position: absolute;
+  font-size: 0.5rem;
+  opacity: 90%;
+  width: 100%;
+  bottom: 3%;
+}
+
+.contact-text {
+  color: white;
+}
+
+.center-form {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+button[type="submit"] {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #fafafa;
+  background-color: #326273;
+}
+
+.cols li {
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: "Source Sans Pro";
+
+}
+
+.cols {
+  padding-top: 8em;
+  padding-bottom: 12em;
+  background-color: #326273;
+  color: #FFFFFF;
+  list-style: none;
+}
+
+.Training {
+  padding-bottom: 10em;
+  padding-top: 10em;
+}
+
+.lessons {
+  margin-top: 20rem;
+}
+/*Media Queries*/
+@media screen and (max-width: 1024px) {
+  .dog-icon {
+    height: 10rem;
+    width: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .landing {
+    visibility: hidden;
+    display: none;
+  }
+
+  .col-sm-8 {
+    margin-top: 2rem;
+  }
+
+  #services div {
+    width: 100%;
+  }
+
+  .contact {
+    position: relative;
+    padding-top: 10em;
+  }
+
+  .contact-text {
+
+    color: #2F4F4F;
+  }
+
+  .cols li {
+
+    width: 100%;
+  }
+
+  .cols {
+    padding-bottom: 15em;
+  }
+
+  #About-Me div {
+    width: 100%;
+  }
+
+  .service-divider {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+/*Keyframes generated by Animista*/
+
+@-webkit-keyframes scale-in-hor-left {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-hor-left {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
